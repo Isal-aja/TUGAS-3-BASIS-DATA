@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABAY-WEB</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <a href="https://github.com/Isal-aja">
+                <img src="icon/github.png" alt="logo github" class="logo">
+            </a>
+            <h1>ABAY-WEB</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">POST 1</a></li>
+                <li><a href="post2.html" class="active">POST 2</a></li>
+                <li><a href="kontak.html">KONTAK</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Artikel Abay</h1>
+            <p><time datetime="2025-10-07">Dibuat pada 07 Oktober 2025</time></p>
+        </section>
+        <section>
+            <article>
+                <h2>Apa itu Relation pada ERD?</h2>
+                <p><strong>Relation (hubungan)</strong> dalam ERD menggambarkan keterkaitan antar entitas.
+Setiap hubungan menunjukkan bagaimana data dari satu entitas berinteraksi dengan entitas lainnya.</p>
+                <p>Hubungan ini bisa berupa:</p>
+                <ul>
+                    <li><strong>One to One (1 : 1)</strong> satu entitas hanya berhubungan dengan satu entitas lain.</li>
+                    <li><strong>One to Many (1 : n)</strong> satu entitas berhubungan dengan banyak entitas lain.</li>
+                    <li><strong>Many to Many (m : n)</strong> banyak entitas saling berhubungan dengan banyak entitas lain.</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Mengapa Many-to-Many Tidak Baik Digunakan pada ERD?</h2>
+                <p>Hubungan <strong>many-to-many (m : n) tidak efisien</strong> digunakan secara langsung karena dapat menimbulkan:</p>
+                <p>Hubungan ini bisa berupa:</p>
+                <ul>
+                    <li><strong>Duplikasi Data</strong></li>
+                    <li><strong>Kesulitan dalam implementasi basis data relasional,</strong></li>
+                    <li><strong>Kesulitan dalam menjaga integritas data.</strong></li>
+                </ul>
+                <p>Oleh karena itu, hubungan <strong> many-to-many</strong> harus diubah menjadi <strong> dua hubungan one-to-many</strong> dengan menambahkan tabel penghubung (tabel relasi).</p>
+                <p>Contoh:</p>
+                <p>Hubungan antara <strong> Mahasiswa</strong> dan <strong>Mata_Kuliah</strong> adalah <i>many-to-many</i> (satu mahasiswa bisa ambil banyak matkul, dan satu matkul bisa diambil banyak mahasiswa).
+Untuk mengatasinya, dibuat tabel <strong>KRS</strong> sebagai tabel penghubung.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2025 ABAY-WEB. All rights reserved.</p>
+    </footer>
+</body>
+</html>

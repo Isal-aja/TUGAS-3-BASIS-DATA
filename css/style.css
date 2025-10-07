@@ -1,0 +1,162 @@
+html ,body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgb(119, 0, 255); /*warna header*/
+    color: white; /*warna text header*/
+    display: flex; /*agar tampilan header menjadi vertikal*/
+    flex-direction: column; /*membuat header menjadi vertikal(atas ke bawah)*/
+    align-items: flex-start; /*membuat header ke kiri*/
+    padding:  20px 0 0 0 ; /* 20px adalah jarak antara  atas dan bawah sedangkan 0 adalah jarak kanan dan kiri*/
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem; /*1.5 x 16px = 24px*/
+}
+
+.logo-title {
+    display: flex; /*agar tampilan logo menjadi vertikal*/
+    align-items: center; /*biar logo dan tulisan sejajar di tengah" vertikal*/
+    gap: 10px; /*jarak antara logo dan judul*/
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+nav {
+    width: 100%;
+    border-top: 2px solid white; /*membuat garis border*/
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600; /*untuk menebalkan font pada navbar*/
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+main {
+          /*agar konten full*/
+  padding: 20px;         /* kasih jarak di dalam */
+  background-color: #fff; /* background putih */
+  border-radius: 10px;    /* sudut melengkung dikit, biar estetik */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* efek bayangan halus */
+  font-family: 'Poppins', sans-serif; /* gaya font biar modern */
+  flex: 1;
+}
+
+main h1 {
+    margin-left: -5px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: -5px;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+main p {
+    padding-left: 10px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: -10px;
+}
+
+main ul li {
+    color: #333;
+    padding-left: 10px;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sosmed {
+  display: flex;              /* bikin sejajar horizontal */
+  justify-content: left;    /* biar posisinya di tengah */
+  align-items: center;
+  gap: 5px;                  /* jarak antar icon */
+  margin-top: 15px;
+}
+
+.sosmed a img {
+  width: 30px;                /* ukuran icon */
+  height: 30px;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+.sosmed a img:hover {
+  transform: scale(1.2);      /* efek zoom pas dihover */
+}
+
+.kontak-info {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.kontak-info h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+th, td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+    th {
+      background-color: white;
+    }
