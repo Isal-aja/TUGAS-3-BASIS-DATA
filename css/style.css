@@ -49,7 +49,7 @@ nav ul {
     justify-content: center;
     gap: 20px;
     list-style: none;
-    margin-right: 50px;
+    margin-right: 45px;
 }
 
 nav ul li a {
@@ -162,4 +162,5 @@ th, td {
       background-color: white;
 
     }
+
 
